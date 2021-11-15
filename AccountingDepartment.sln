@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingDepartment.Web", "AccountingDepartment\AccountingDepartment.Web.csproj", "{A272F7C9-8F06-45E0-AF62-571CF66E4DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingDepartment.DataBase", "AccountingDepartment.DataBase\AccountingDepartment.DataBase.csproj", "{ED0BE596-9153-41BA-87E9-2C73F91C447B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A272F7C9-8F06-45E0-AF62-571CF66E4DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A272F7C9-8F06-45E0-AF62-571CF66E4DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A272F7C9-8F06-45E0-AF62-571CF66E4DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A272F7C9-8F06-45E0-AF62-571CF66E4DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0BE596-9153-41BA-87E9-2C73F91C447B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0BE596-9153-41BA-87E9-2C73F91C447B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0BE596-9153-41BA-87E9-2C73F91C447B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0BE596-9153-41BA-87E9-2C73F91C447B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7493E694-27FB-4B97-B661-2CE86CC60E2D}
+	EndGlobalSection
+EndGlobal

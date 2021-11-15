@@ -1,0 +1,50 @@
+﻿@model AccountingDepartment.Web.Models.Department.DepartmentDetailsView
+
+@{
+    ViewData["Title"] = @Model.Name;
+}
+
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+             Средняя зп
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Employees.Average(x => x.Salary)
+        </dd>
+    </dl>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                Имя
+            </th>
+            <th>Зарплата</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Employees) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+        </tr>
+    }
+</table>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Назад к списку</a>
+</div>
